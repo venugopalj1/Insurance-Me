@@ -15,6 +15,5 @@
     command : sudo systemctl start docker
     become : yes
     become_user : root
-
   - name: Deploy Docker Container
     command: docker run -itd -p 8084:8081 venugopalj/insureme2:1.0
